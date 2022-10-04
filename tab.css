@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+
+  display: grid;
+  place-content: bottom;
+}
+
+nav {
+  --item-size: 3rem;
+  --fg-primary: #555555;
+  --transition: 300ms ease-in-out;
+  --dot-size: 0.35rem;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: var(--item-size);
+
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 0.875rem;
+
+  overflow: hidden;
+}
+
+nav > a {
+  position: relative;
+  
+  display: grid;
+  place-content: center;
+
+  color: var(--fg-primary);
+}
+
+nav > a::before {
+  content: '';
+
+  position: absolute;
+  left: 50%;
+  bottom: -0.6rem;
+  width: var(--dot-size);
+  height: var(--dot-size);
+
+  border-radius: 50%;
+
+  background-color: rgba(var(--hi-color, 0.85));
+
+  transform: translate(-50%, -50%);
+
+  transition: transform var(--transition);
+}
+
+nav > a:hover {
+  color: rgb(var(--hi-color));
+}
+
+nav > a > * {
+  transition: transform var(--transition),
+    fill var(--transition);
+}
+
+nav > a.active > * {
+  color: rgb(var(--hi-color));
+  fill: rgba(var(--hi-color), 0.1);
+
+  transform: translateY(-0.25rem);
+}
+
+nav > a.active::before {
+  transform: 
+    translate(-50%, -50%) 
+    translateY(-0.75rem);
+}
+
+nav > a.home {
+  --hi-color: 185, 77, 221;
+}
+
+nav > a.wallet {
+  --hi-color: 128, 76, 222;
+}
+
+nav > a.chart {
+  --hi-color: 185, 77, 221;
+}
+
+nav > a.shield {
+  --hi-color: 128, 76, 222;
+}
