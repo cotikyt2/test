@@ -8,17 +8,21 @@
 }
 
 button{
-    padding: 12px 20px;
+    padding: 5px 10px;
     font-size: 20px;
     outline: none;
     border: none;
-    background-color: #4070f4;
+    background-color: #a142ef;
     color: #fff;
-    border-radius: 6px;
+    border-radius: 0px;
     cursor: pointer;
     transition: 0.3s;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
+
+
 button:hover{
-    background-color: #0e4bf1;
+    background-color: #a142ef;
 }
