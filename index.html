@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
+
    
     <!css>
 <link href="views.css" rel="stylesheet" type="text/css">
 <link href="views_button.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+<link rel="stylesheet" href="pop-up.css">
 <link href="card.css" rel="stylesheet" type="text/css">
 <link href="image.css" rel="stylesheet" type="text/css">
 <link href="tab.css" rel="stylesheet" type="text/css">
 <link href="style.css" rel="stylesheet" type="text/css">
-<link href="adapt.css" rel="stylesheet" type="text/css">
 
 
-    
 </head>
 
 <body>
@@ -26,17 +27,34 @@
     <div class="content">
         <img src="logo.jpg">
         <h2>StayZex<br><span>contact me</span></h2>
-        <a href="https://t.me/stayzex">Telegram</a>
+        <a href="https://t.me/stayzex"><tbutton>Telegram</tbutton></a>
         </div>
         </div></section>
         
-        <center><button>Views:</button><button><h1 id="count">0</h1></button></center>
+        <center><button class="vbutton">Views:</button><button class="vbutton"><h1 id="count">0</h1></button></center>
         
         <div class="bio">rhenjqgewasgdha<br> wfefew<br> efewfewfw<br> hwoiqhfwi<br> hfwohefhoweh<br> hdqwohdiqiw<br> ugwigiwgudi<br> gwduqgfiwg</div>
     </div>
     
-    
-    
+    <div class="toast">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-check check"></i>
+
+            <div class="message">
+                <span class="text text-1">Пожалуйста, подождите</span>
+                <span class="text text-2">Вы переходите на сторонний сайт</span>
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+
+        <div class="progress"></div>
+    </div>
+
+    <testbutton>Show Toast</testbutton>
+        <testbutton>Show Toast</testbutton>
+
+        <testbutton>Show Toast</testbutton>
+
     <nav>
     <a href="#test" class="home active">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +95,8 @@
     </a>
         </nav>
      
-    
+
     <script src="views.js"></script>
+    <script src="pop-up.js"></script>
     
 </body>
